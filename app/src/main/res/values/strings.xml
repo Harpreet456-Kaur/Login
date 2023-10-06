@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="add_notes_here">Add notes here</string>
+    <string name="SAVE">SAVE\n</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/loginScreen">
+
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="com.example.login.LoginScreen"
+        android:label="fragment_login_screen"
+        tools:layout="@layout/fragment_login_screen" >
+        <action
+            android:id="@+id/action_loginScreen_to_registration"
+            app:destination="@id/registration" />
+        <action
+            android:id="@+id/action_loginScreen_to_getData"
+            app:destination="@id/getData" />
+        <action
+            android:id="@+id/action_loginScreen_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registration"
+        android:name="com.example.login.Registration"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registration_to_loginScreen"
+            app:destination="@id/loginScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/getData"
+        android:name="com.example.login.GetData"
+        android:label="fragment_get_data"
+        tools:layout="@layout/fragment_get_data" >
+        <action
+            android:id="@+id/action_getData_to_addNotes"
+            app:destination="@id/addNotes" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.login.views.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addNotes3"
+            app:destination="@id/addNotes" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNotes"
+        android:name="com.example.login.AddNotes"
+        android:label="fragment_add_notes"
+        tools:layout="@layout/fragment_add_notes" >
+        <action
+            android:id="@+id/action_addNotes_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
